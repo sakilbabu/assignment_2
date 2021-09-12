@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'data.dart';
+import 'data_model.dart';
 
-class Des extends StatelessWidget {
+class DesPage extends StatelessWidget {
   final Model model;
 
-  Des({
+  DesPage({
     Key? key,
     required this.model,
   }) : super(key: key);
@@ -25,9 +25,12 @@ class Des extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(height: 10),
-          Text(
-            model.dsc,
-            style: TextStyle(fontWeight: FontWeight.bold),
+          Padding(
+            padding: const EdgeInsets.all(18.0),
+            child: Text(
+              model.dsc,
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
           ),
         ],
       ),
