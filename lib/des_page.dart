@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'data_model.dart';
 
 class DesPage extends StatelessWidget {
-  final Model model;
+  final TopicModel topicModel;
 
   DesPage({
     Key? key,
-    required this.model,
+    required this.topicModel,
   }) : super(key: key);
 
   @override
@@ -28,7 +28,7 @@ class DesPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(18.0),
             child: Text(
-              model.dsc,
+              topicModel.descriptions,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
